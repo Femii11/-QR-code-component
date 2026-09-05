@@ -63,6 +63,7 @@ div {
       margin-bottom: 5%;
       font-family: 'Outfit', sans-serif;
     }
+```
 
 
 To see how you can add code snippets, see below:
@@ -95,8 +96,6 @@ In future projects, I want to continue focusing on:
 - Twitter - [@femii_dev](https://www.twitter.com/femii_dev)
 
 ## Acknowledgments
-
-### Acknowledgments
 
 * **[Frontend Mentor](https://www.frontendmentor.io)** - Thanks to Frontend Mentor for providing this fun component challenge to practice layout and responsive design.
 * **[MDN Web Docs - Flexbox Guide](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox)** - Great reference for understanding alignment and flex properties.
