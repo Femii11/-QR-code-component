@@ -4,82 +4,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="font" href="https://fonts.google.com/specimen/Outfit">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
 
-  <title>Frontend Mentor | QR code component</title>
-
+  <title>Frontend Mentor | QR Code Component</title>
   <style>
-    @media screen and (max-width: 375px) {
-      div {
-        max-width: 90%;
-        height: auto;
-      }
-    }
-
     * {
       box-sizing: border-box;
-    }
-
-    body,
-    html {
       margin: 0;
       padding: 0;
-      background-color: hsl(212, 45%, 89%);
     }
 
-    div {
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
-      max-width: 300px;
-      height: auto;
-      width: 100%;
-      text-align: center;
-      background-color: hsl(0, 0%, 100%);
-      border-radius: 10px;
-      padding: 15px;
-      margin: 0 auto;
-      margin-top: 5%;
-      margin-bottom: 5%;
+      justify-content: center;
+      align-items: center;
+
+      background-color: hsl(212, 45%, 89%);
       font-family: 'Outfit', sans-serif;
+
+      padding: 20px;
     }
 
-    img {
+    main {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 320px;
+
+      background-color: hsl(0, 0%, 100%);
+      border-radius: 20px;
+      padding: 16px;
+
+      text-align: center;
+
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    }
+
+    .card img {
+      display: block;
       width: 100%;
       height: auto;
+
       border-radius: 10px;
     }
 
-    h1 {
-      font-size: 20px;
-      color: hsl(218, 44%, 22%);
-      font-weight: 700;
+    .card-content {
+      padding: 20px 12px 10px;
     }
 
-    p {
+    .card h1 {
+      font-size: 22px;
+      line-height: 1.25;
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+
+      margin-bottom: 16px;
+    }
+
+    .card p {
       font-size: 15px;
-      color: hsl(216, 15%, 48%);
       line-height: 1.5;
       font-weight: 400;
+      color: hsl(216, 15%, 48%);
+    }
+
+    @media screen and (max-width: 375px) {
+      .card {
+        max-width: 100%;
+      }
+
+      .card h1 {
+        font-size: 20px;
+      }
     }
   </style>
 </head>
-
 <body>
   <main>
-    <div>
-      <span>
-        <img src="./images/image-qr-code.png" alt="QR Code">
-      </span>
-      <span>
-        <h1>Improve your front-end skills by building projects</h1>
-        <p>Scan the QR code to visit the Frontend Mentor and take your coding skill to the next level</p>
-      </span>
+    <div class="card">
+      <img
+        src="./images/image-qr-code.png"
+        alt="QR code linking to Frontend Mentor">
+      <div class="card-content">
+        <h1>
+          Improve your front-end skills by building projects
+        </h1>
+        <p>
+          Scan the QR code to visit Frontend Mentor and take your coding
+          skills to the next level
+        </p>
+      </div>
     </div>
   </main>
-
 </body>
-
 </html>
